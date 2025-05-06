@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joel Rose, Front End Developer, A problem-solving attitude">
+    <title>Joelzebub</title>
+<!-- favicon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<!-- Hadassah's stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mona-sans.css">
+<link rel="stylesheet" href="css/typography.css">
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="js/MyTyping.js" type="text/javascript"></script>
+<!-- goolgle fonts    -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!-- Fancybox -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="css/fancybox-1.css"> 
+<!-- Boxicons -->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<style>
+    #playlist{
+      list-style: none;
+    }
+    #playlist li a {
+      color: #fff1df;
+      text-decoration: none;
+      font-size: 40px;
+      font-weight: 500;
+      filter: drop-shadow(2px 2px 2px #b37627);
+      
+    }
+    #playlist li a:hover {
+      color: #ffa631;
+      text-decoration: none;
+      font-size: 40px;
+      font-weight: 500;
+      filter: drop-shadow(2px 2px 2px #ffa631);
+
+    }
+    #playlist .current-song a{
+      color: #ff00f2;
+      filter: drop-shadow(1px 1px 3px #970090);
+      text-decoration: none;
+      text-decoration-line: line-through;
+      font-weight: 900;
+      text-decoration-color: #ffc0fc 1px solid;
+      opacity: 5;
+    }
+
+  </style>
+<body>
+    <header>
+        <div class="animatedGradient">JOELzEBUB</div>            
+        <a href="#" class="logo box"><img src="img/logo-3final.png"></a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary intro action">
+          <div class="container-fluid">
+            <a class="navbar-brand" id="menu-icon"></a>
+            <button class="navbar-toggler primary-navigation d-flex d-lg-none flex-column justufy-content-around" type="button btn" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="toggler-icon top-bar  one"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar header">
+  
+      <ul class="navbar">
+          <li><a class="animatedGradient Rainbow-nav-link" href="#home">Home</a></li>
+          <li><a class="animatedGradient Rainbow-nav-link" href="#about">About</a><li>
+          <li><a class="animatedGradient Rainbow-nav-link" href="#work">Work</a><li>
+          <li><a class="animatedGradient Rainbow-nav-link" href="#gallery">Gallery</a></li> 
+          <!-- <li><a class="animatedGradient nav-link"href="#faq">F.A.Qa></li> -->
+          <li><a class="animatedGradient Rainbow-nav-link" href="#music">Music</a><li>
+          <li><a class="animatedGradient Rainbow-nav-link" href="#contact">Contact</a></li>
+          </ul></ul>
+            </div>
+          </div>
+        </nav><!-- <a href="mailto:joelrose@hotmail.com?subject=Web Site Design" class="h-btn">Let's Talk</a> -->
+        <a href="#" class="h-btn">Let's Talk</a>
+  </header>
+  
+  
+      
+        
+    </header>
+  <!-- Header End -->  
+   
+  <!-- Home Start -->
+<section class="home animatedBackground" id="home">
+    <div class="home-text">
+      <br class="cursor">
+    <!-- <h1>Hadassah Mashugadah</h1> -->
+    <!-- <br><br> -->
+    <h3><abbr class="animatedGradient2" title="Joelzebub">Joelzebub </abbr></h3>
+  <!-- 
+    <h3 class="animated">Web Developer  UX/UI<abbr title="User Interface (UI)"> </abbr>/Graphic Designer.</h3> -->
+              
+    <!-- <div class="animated-text">
+      <span></span>
+  </div> -->
+  <div id="slider">
+    <div class="span" id="sliderValue"></div>
+  </div>
+  <script src="js/typeing2.js" type="text/javascript"></script>
+  
+    <div>
+  <div>
+    <h2 class="h2-mktg home-text">
+  <br>
+  <span class="m-c">H</span><span class="m-c">i</span><span class="m-c">&nbsp;</span><span class="m-c">I</span><span class="m-c">'</span><span class="m-c">m</span><span class="m-c">&nbsp;</span><span class="m-c">J</span><span class="m-c">o</span><span class="m-c">e</span><span class="m-c">l</span><span class="m-c">,</span><span class="m-c">&nbsp;</span><span class="m-c">A</span> <span class="m-c">&nbsp;</span><span class="m-c">C</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">a</span><span class="m-c">t</span><span class="m-c">i</span><span class="m-c">v</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">D</span><span class="m-c">e</span><span class="m-c">s</span><span class="m-c">i</span><span class="m-c">g</span><span class="m-c">n</span><span class="m-c">e</span><span class="m-c">r</span><span class="m-c">.</span><br><span class="m-c">S</span><span class="m-c">h</span><span class="m-c">a</span><span class="m-c">r</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">g</span><span class="m-c">&nbsp;</span><span class="m-c">Y</span><span class="m-c">o</span><span class="m-c">u</span><span class="m-c">r</span><span class="m-c">&nbsp;</span><span class="m-c">v</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">i</span><span class="m-c">o</span><span class="m-c">n</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">n</span><span class="m-c">d</span><span class="m-c">&nbsp;</span><span class="m-c">c</span><span class="m-c">a</span><span class="m-c">p</span><span class="m-c">t</span><span class="m-c">u</span><span class="m-c">r</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">g</span><span class="m-c">&nbsp;</span><br><span class="m-c">e</span><span class="m-c">v</span><span class="m-c">e</span><span class="m-c">r</span><span class="m-c">y</span><span class="m-c">&nbsp;</span><span class="m-c">p</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">c</span><span class="m-c">i</span><span class="m-c">o</span><span class="m-c">u</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">m</span><span class="m-c">o</span><span class="m-c">m</span><span class="m-c">e</span><span class="m-c">n</span><span class="m-c">t</span><span class="m-c">.</span><br>
+  <br>
+  <span class="m-c">W</span><span class="m-c">i</span><span class="m-c">t</span><span class="m-c">h</span><span class="m-c">&nbsp;</span><span class="m-c">2</span><span class="m-c">5</span><span class="m-c">+</span><span class="m-c">&nbsp;</span><span class="m-c">Y</span><span class="m-c">e</span><span class="m-c">a</span><span class="m-c">r</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">I</span><span class="m-c">n</span><span class="m-c">d</span><span class="m-c">u</span><span class="m-c">s</span><span class="m-c">t</span><span class="m-c">r</span><span class="m-c">y</span><span class="m-c">&nbsp;</span><span class="m-c">E</span><span class="m-c">x</span><span class="m-c">p</span><span class="m-c">e</span><span class="m-c">r</span><span class="m-c">i</span><span class="m-c">e</span><span class="m-c">n</span><span class="m-c">c</span><span class="m-c">e</span><span class="m-c">.</span><br>
+  <br>
+  <span class="m-c">A</span><span class="m-c">&nbsp;</span><span class="m-c">g</span><span class="m-c">r</span><span class="m-c">a</span><span class="m-c">p</span><span class="m-c">h</span><span class="m-c">i</span><span class="m-c">c</span><span class="m-c">&nbsp;</span><span class="m-c">d</span><span class="m-c">e</span><span class="m-c">s</span><span class="m-c">i</span><span class="m-c">g</span><span class="m-c">n</span><span class="m-c">e</span><span class="m-c">r</span><span class="m-c">&nbsp;</span><span class="m-c">s</span><span class="m-c">p</span><span class="m-c">e</span><span class="m-c">c</span><span class="m-c">i</span><span class="m-c">a</span><span class="m-c">l</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">g</span><span class="m-c">&nbsp;</span><span class="m-c">i</span><span class="m-c">n </span><span class="m-c">&nbsp;</span><span class="m-c">b</span><span class="m-c">r</span><span class="m-c">a</span><span class="m-c">n</span><span class="m-c">d</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">g</span><br>
+  
+  
+  <span class="m-c">v</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">u</span><span class="m-c">a</span><span class="m-c">l</span><span class="m-c">&nbsp;</span><span class="m-c">i</span><span class="m-c">d</span><span class="m-c">e</span><span class="m-c">n</span><span class="m-c">t</span><span class="m-c">i</span><span class="m-c">t</span><span class="m-c">y</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">n</span><span class="m-c">d</span><span class="m-c">&nbsp;</span><span class="m-c">E</span><span class="m-c">x</span><span class="m-c">p</span><span class="m-c">e</span><span class="m-c">r</span><span class="m-c">i</span><span class="m-c">e</span><span class="m-c">n</span><span class="m-c">t</span><span class="m-c">i</span><span class="m-c">a</span><span class="m-c">l</span><span class="m-c">&nbsp;</span><span class="m-c">d</span><span class="m-c">e</span><span class="m-c">s</span><span class="m-c">i</span><span class="m-c">g</span><span class="m-c">n</span><span class="m-c">.</span><span class="m-c">&nbsp;</span><span class="m-c">&nbsp;</span>
+  
+  <br>
+  
+  <span class="m-c">T</span><span class="m-c">h</span><span class="m-c">r</span><span class="m-c">o</span><span class="m-c">u</span><span class="m-c">g</span><span class="m-c">h</span><span class="m-c">&nbsp;</span><span class="m-c">b</span><span class="m-c">r</span><span class="m-c">a</span><span class="m-c">n</span><span class="m-c">d</span><span class="m-c">&nbsp;</span><span class="m-c">s</span><span class="m-c">t</span><span class="m-c">r</span><span class="m-c">a</span><span class="m-c">t</span><span class="m-c">e</span><span class="m-c">g</span><span class="m-c">y</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">n</span><span class="m-c">d</span><span class="m-c">&nbsp;</span><span class="m-c">v</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">u</span><span class="m-c">a</span><span class="m-c">l</span><span class="m-c">&nbsp;</span><br><span class="m-c">d</span><span class="m-c">e</span><span class="m-c">v</span><span class="m-c">e</span><span class="m-c">l</span><span class="m-c">o</span><span class="m-c">p</span><span class="m-c">m</span><span class="m-c">e</span><span class="m-c">n</span><span class="m-c">t</span><span class="m-c">.</span>
+  
+  
+  
+    </h2>
+    <br>
+    <a href="#" class="h-btn">Let's Talk</a>
+  
+  </div><br><br>
+  <div class="ux-meaning">
+    UX = User Experience (UX) <br>
+    UI = User Interface (UI)<br>
+    Experiential = Involving or based <br> 
+    on experience and observation the <br> 
+    experiential learning associated <br>
+    with employment.</div>
+  
+  </div>
+    
+    </div>
+    </div>
+  <div class="home-img"><img class="home-img box-2" src="img/logo-3.png"></div>
+  </section>
+  <!-- home end -->
+
+  
+<!-- About start -->
+<section class="about" id="about">
+    <div class="about-img">
+    <img src="img/joel.jpg" title="Joelzebub"> 
+    </div>
+    <div class="container">
+      <div class="text-block">
+        <h4 class="animatedGradient2">Joelzebub</h4>
+      </div>
+    </div>
+    <div class="about-text">
+    <h3 class="animatedGradient">About Joelzebub</h3>
+    <h3 class="animatedGradient2"> Developer & Designer</h3>
+    
+    <br>   
+    
+    <div>
+      <div>
+        <h2 class="h3-mktg">
+    
+    <span class="m-c">M</span><span class="m-c">y</span><span class="m-c">&nbsp;</span><span class="m-c">f</span><span class="m-c">o</span><span class="m-c">c</span><span class="m-c">u</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">o</span><span class="m-c">n</span><span class="m-c">&nbsp;</span><span class="m-c">u</span><span class="m-c">n</span><span class="m-c">i</span><span class="m-c">q</span><span class="m-c">u</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">v</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">u</span><span class="m-c">a</span><span class="m-c">l</span><span class="m-c">&nbsp;</span><span class="m-c">c</span><span class="m-c">o</span><span class="m-c">n</span><span class="m-c">c</span><span class="m-c">e</span><span class="m-c">p</span><span class="m-c">t</span><span class="m-c">s</span><br><span class="m-c">a</span><span class="m-c">n</span><span class="m-c">d</span><span class="m-c">&nbsp;</span><span class="m-c">g</span><span class="m-c">r</span><span class="m-c">i</span><span class="m-c">p</span><span class="m-c">p</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">g</span><span class="m-c">&nbsp;</span><span class="m-c">d</span><span class="m-c">i</span><span class="m-c">g</span><span class="m-c">i</span><span class="m-c">t</span><span class="m-c">a</span><span class="m-c">l</span><span class="m-c">&nbsp;</span><span class="m-c">e</span><span class="m-c">x</span><span class="m-c">p</span><span class="m-c">e</span><span class="m-c">r</span><span class="m-c">i</span><span class="m-c">e</span><span class="m-c">n</span><span class="m-c">c</span><span class="m-c">e</span><span class="m-c">s</span><span class="m-c">.</span>
+    <br><br>
+    
+    <span class="m-c">I</span><span class="m-c">'</span><span class="m-c">m</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">l</span><span class="m-c">w</span><span class="m-c">a</span><span class="m-c">y</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">l</span><span class="m-c">o</span><span class="m-c">o</span><span class="m-c">k</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">g</span><span class="m-c">&nbsp;</span><span class="m-c">f</span><span class="m-c">o</span><span class="m-c">r</span><span class="m-c">&nbsp;</span><span class="m-c">c</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">a</span><span class="m-c">t</span><span class="m-c">i</span><span class="m-c">v</span><span class="m-c">e</span><br><span class="m-c">a</span><span class="m-c">n</span><span class="m-c">d</span><span class="m-c">&nbsp;</span><span class="m-c">I</span><span class="m-c">n</span><span class="m-c">n</span><span class="m-c">o</span><span class="m-c">v</span><span class="m-c">a</span><span class="m-c">t</span><span class="m-c">i</span><span class="m-c">v</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">s</span><span class="m-c">o</span><span class="m-c">l</span><span class="m-c">u</span><span class="m-c">t</span><span class="m-c">i</span><span class="m-c">o</span><span class="m-c">n</span><span class="m-c">s</span><span class="m-c">,</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">i</span><span class="m-c">m</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">g</span><span class="m-c">&nbsp;</span><span class="m-c">t</span><span class="m-c">o</span><span class="m-c">&nbsp;</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">a</span><span class="m-c">c</span><span class="m-c">h</span><span class="m-c">&nbsp;</span><br><span class="m-c">f</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">s</span><span class="m-c">h</span><span class="m-c">&nbsp;</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">s</span><span class="m-c">u</span><span class="m-c">l</span><span class="m-c">t</span><span class="m-c">&nbsp;</span><span class="m-c">w</span><span class="m-c">i</span><span class="m-c">t</span><span class="m-c">h</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">&nbsp;</span><span class="m-c">p</span><span class="m-c">r</span><span class="m-c">o</span><span class="m-c">b</span><span class="m-c">l</span><span class="m-c">e</span><span class="m-c">m</span><span class="m-c">&nbsp;</span><span class="m-c">s</span><span class="m-c">o</span><span class="m-c">l</span><span class="m-c">v</span><span class="m-c">e</span><span class="m-c">r</span><span class="m-c">'</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">m</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">d</span><span class="m-c">s</span><span class="m-c">e</span><span class="m-c">t</span><span class="m-c">.</span>
+    </div>
+    <br><br><a href="#" class="h-btn">Let's Talk</a>
+    
+    
+    
+      </div>
+    
+    <div class="about-hobbies">
+      <div class="hobbies">
+        <div class="about-icons">
+          <h2 class="animatedGradient4">Drawing</h2>
+        <i><a href="#gallery"><img class="drawing" src="img/draw-icon.png" alt="draw-icon"></a></i>
+        </div>
+      </div>
+    </div>
+    <div class="about-hobbies">
+      <div class="hobbies">
+        <div class="about-icons">
+          <h2 class="animatedGradient4">&nbsp;&nbsp;&nbsp;Music</h2>
+        <i><a href="#music"><img class="my-music" src="img/music-icon.png" alt="game-icon"></a></i>
+        </div>
+      </div>
+    </div>
+    <div class="about-hobbies">
+      <div class="hobbies">
+        <div class="about-icons">
+          <h2 class="animatedGradient4">Gaming</h2>
+          <i><img class="Game" src="img/game-icon.png" alt="game-icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="about-hobbies">
+      <div class="hobbies">
+        <div class="about-icons">
+          <h2 class="animatedGradient4">Movies</h2>
+          <i ><img class="movies" src="img/movie-icon.png" alt="movie-icon"></i>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-skillbar">
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="90%">
+        <div class="skillbar-title" style="background:#192823;"><span>HTML</span></div>
+        <div class="skillbar-bar one"></div>
+        <div class="skill-bar-percent">90%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="65%">
+        <div class="skillbar-title" style="background:#EBB035;"><span>CSS</span></div>
+        <div class="skillbar-bar two"></div>
+        <div class="skill-bar-percent">65%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="45%">
+        <div class="skillbar-title" style="background:#ff00d4;"><span>Javascript</span></div>
+        <div class="skillbar-bar three"></div>
+        <div class="skill-bar-percent">45%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="97%">
+        <div class="skillbar-title" style="background:#06A2CB;"><span>Photoshop</span></div>
+        <div class="skillbar-bar four"></div>
+        <div class="skill-bar-percent">97%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="80%">
+        <div class="skillbar-title" style="background:#bada55;"><span>Lightwave</span></div>
+        <div class="skillbar-bar five"></div>
+        <div class="skill-bar-percent">80%</div>
+      </div>
+    <!-- Ende Skill Bar -->
+    </div>
+    <!-- Ende container Skill Bar -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/skills.js"></script>
+    
+    
+    
+    </section>
+    <!-- About end -->
+    <!-- Work start -->
+    <section class="work" id="work">
+      <div class="work-text">
+        <h3 class="animatedGradient2">My Web Work</h3><br>
+        <div>
+          <div>
+            <h2 class="h2-mktg">
+      
+      <span class="m-c">W</span><span class="m-c">h</span><span class="m-c">a</span><span class="m-c">t</span><span class="m-c">&nbsp;</span><span class="m-c">d</span><span class="m-c">o</span><span class="m-c">&nbsp;</span><span class="m-c">y</span><span class="m-c">o</span><span class="m-c">u</span><span class="m-c">&nbsp;</span><span class="m-c">n</span><span class="m-c">e</span><span class="m-c">e</span><span class="m-c">d</span><span class="m-c">?</span><br>
+    
+      <span class="m-c">W</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">c</span><span class="m-c">a</span><span class="m-c">n</span><span class="m-c">&nbsp;</span><span class="m-c">c</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">a</span><span class="m-c">t</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">&nbsp;</span><span class="m-c">s</span><span class="m-c">t</span><span class="m-c">u</span><span class="m-c">n</span><span class="m-c">n</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">g</span><span class="m-c">&nbsp;</span><span class="m-c">w</span><span class="m-c">e</span><span class="m-c">b</span><span class="m-c">s</span><span class="m-c">i</span><span class="m-c">t</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">u</span><span class="m-c">s</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">g</span><span class="m-c">:</span>
+      <br><br> 
+      <span class="m-c">A</span><span class="m-c">d</span><span class="m-c">o</span><span class="m-c">b</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">P</span><span class="m-c">h</span><span class="m-c">o</span><span class="m-c">t</span><span class="m-c">o</span><span class="m-c">s</span><span class="m-c">h</span><span class="m-c">o</span><span class="m-c">p</span><span class="m-c">.</span>&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/PS.png" title="Adobe Photoshop"><br>
+      <span class="m-c">L</span><span class="m-c">i</span><span class="m-c">g</span><span class="m-c">h</span><span class="m-c">t</span><span class="m-c">w</span><span class="m-c">a</span><span class="m-c">v</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">3</span><span class="m-c">D</span><span class="m-c">.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/LW.png" title="Lightwave 3D" ><br>
+      <span class="m-c">V</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">u</span><span class="m-c">a</span><span class="m-c">l</span><span class="m-c">&nbsp;</span><span class="m-c">S</span><span class="m-c">t</span><span class="m-c">u</span><span class="m-c">d</span><span class="m-c">i</span><span class="m-c">o</span><span class="m-c">&nbsp;</span><span class="m-c">C</span><span class="m-c">o</span><span class="m-c">d</span><span class="m-c">e</span><span class="m-c">.</span>&nbsp;&nbsp;<img src="img/VSC.png" title="Visual Studio Code"><br>
+    
+      <span class="m-c">t</span><span class="m-c">o</span><span class="m-c">&nbsp;</span><span class="m-c">n</span><span class="m-c">a</span><span class="m-c">m</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">&nbsp;</span><span class="m-c">f</span><span class="m-c">e</span><span class="m-c">w</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">n</span><span class="m-c">d</span><span class="m-c">&nbsp;</span><span class="m-c">&nbsp;</span><br><span class="m-c">w</span><span class="m-c">i</span><span class="m-c">t</span><span class="m-c">h</span><span class="m-c">&nbsp;</span><span class="m-c">m</span><span class="m-c">o</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">p</span><span class="m-c">r</span><span class="m-c">o</span><span class="m-c">g</span><span class="m-c">r</span><span class="m-c">a</span><span class="m-c">m</span><span class="m-c">s</span><br><span class="m-c">t</span><span class="m-c">h</span><span class="m-c">a</span><span class="m-c">t</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">v</span><span class="m-c">a</span><span class="m-c">i</span><span class="m-c">l</span><span class="m-c">a</span><span class="m-c">b</span><span class="m-c">l</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">t</span><span class="m-c">o</span><span class="m-c">&nbsp;</span><span class="m-c">u</span><span class="m-c">s</span><span class="m-c">.</span>
+    </h2>
+    </div><br><img src="img/html.png" class="poshytip" title="Hyper Text Markup Language (HTML)">&nbsp;<img src="img/css.png" title="Cascading Style Sheets (CSS)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/js.png" title="Javascript (JS)"><br>
+    </div>
+    </div>
+        <div class="carousel-slide testimonial " data-bs-ride="carousel" data-interval="1000" data-pause="hover" data-interval="1000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h2 class="testimonial-text  animatedGradient">&quot;My New Personal Trainer.&quot;</h2><br>
+                    <img class="testimonial-image" src="images/myNewPersonalTrainer.png" alt="myNewPersonalTrainer" class="d-block w-1000">
+                    <br><br><a href="#" class="h-btn">View My Work</a>
+                </div>
+                <div class="carousel-item" class="testimonial-text">
+                  <h2  class="testimonial-text animatedGradient">&quot;Cheeky Machanic.&quot;</h2><br>
+                    <img class="testimonial-image" src="images/CheekyMachanic.png" alt="CheekyMachanic"class="d-block w-1000">
+                    <br><br><a href="#" class="h-btn">View My Work</a>
+                </div>
+                <div class="carousel-item" class="testimonial-text">
+                    <h2  class="testimonial-text animatedGradient">&quot;Chiltern Hundreds.&quot;</h2><br>
+                      <img class="testimonial-image" src="images/ChilternHundreds.png" alt="Chiltern Hundreds Clog Morris"class="d-block w-1000">
+                      <br><br><a href="#" class="h-btn">View My Work</a>
+                  </div>
+                  <div class="carousel-item" class="testimonial-text">
+                    <h2  class="testimonial-text animatedGradient">&quot;Joelzebub.&quot;</h2><br>
+                      <img class="testimonial-image" src="images/joelzebub.png" alt="Joelzebub"class="d-block w-1000">
+                      <br><br><a href="#" class="h-btn">View My Work</a>
+                  </div>
+                  <div class="carousel-item" class="testimonial-text">
+                    <h2  class="testimonial-text animatedGradient">&quot;Herman Mashugadah.&quot;</h2><br>
+                      <img class="testimonial-image" src="images/hermanMashugadah.png" alt="Herman Mashugadah"class="d-block w-1000">
+                      <br><br><a href="#" class="h-btn">View My Work</a>
+                  </div>
+                  <div class="carousel-item" class="testimonial-text">
+                    <h2  class="testimonial-text animatedGradient">&quot;Food Fun.&quot;</h2><br>
+                      <img class="testimonial-image" src="images/foodFun.png" alt="Food Fun"class="d-block w-1000">
+                      <br><br>
+                      <a href="#" class="h-btn">View My Work</a>
+                  </div>
+      
+             <!-- <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon"></span>
+      
+           </a>
+           <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+             <span class="carousel-control-next-icon"></span>
+      
+           </a>
+           </div>-->
+        </div> 
+    
+    </section> 
+    <!-- Work End -->
+    <!-- Gallery start -->
+    <section id="gallery" class="gallery module-border-wrap module">
+        <div class="container-4 fadeIn">
+        <!-- marquee -->
+        <!-- <div class="link link--iocaste" > <h1><MARQUEE LOOP=1 BEHAVIOR=SLIDE SCROLLAMOUNT=20>&nbsp;&nbsp;&nbsp;&nbsp;Here is some of my work... Movies and TV: Witchblade, The Legend of Korra, Star Wars, Raya and the last Dragon. Arcane and some Random Girls...</MARQUEE></h1></div> -->
+        <!-- gallery -->
+            <div class="Gallery">
+                <h3 class="animatedGradient2">My Gallery</h3>
+                <br>
+            <p class="imglist image-hover">
+      <a href="images/AlexUnderwood-Witchblade.jpg" class="fancybox" data-fancybox="group" data-caption="Alex Underwood - Witchblade" title="Alex Underwood &quot;Witchblade&quot;"><img src="images/AlexUnderwoodThumb.png"/></a>
+      <a href="images/Alexandra Bastet - Drowntown.jpg" class="fancybox" data-fancybox="group" data-caption="Alexandra Bastet &quot;Drowntown&quot;" title="Alexandra Bastet &quot;Drowntown&quot;"><img src="images/DrowntownThumb.png"/></a>
+      <a href="images/Cursed-Nimueh-1.jpg" class="fancybox" data-fancybox="group" data-caption="Nimueh &quot;Cursed&quot;" title="Nimueh &quot;Cursed&quot;"><img src="images/CursedThumb.png"/></a>
+      <a href="images/DoctorAphra-1.jpg" class="fancybox" data-fancybox="group" data-caption="Doctor Aphra &quot;Star Wars&quot;" title="Doctor Aphra &quot;Star Wars&quot;"><img src="images/DoctorAphraThumb.png"/></a>
+      <a href="images/Cruella.jpg" class="fancybox" data-fancybox="group" data-caption="Cruella &quot;Cruella&quot;" title="Cruella &quot;Cruella&quot;"><img src="images/CruellaThumb.png"/></a>
+      <a href="images/CheekyMechanic3.jpg" class="fancybox" data-fancybox="group" data-caption="Cheeky Machanic" title="Cheeky Machanic"><img src="images/CheekyMachanicThumb.png"/></a>
+      <a href="images/femalewarrior-gaoxu.jpg" class="fancybox" data-fancybox="group" data-caption="Female Assasin Warrior" title="Female Assasin Warrior"><img src="images/FemaleAssasinWarriorThumb.png"/></a>
+      <a href="images/Jedi2.jpg" class="fancybox" data-fancybox="group" data-caption="Jedi" title="Jedi"><img src="images/jediThumb.png"/></a>
+      <a href="images/MaraJade.jpg" class="fancybox" data-fancybox="group" data-caption="Mara Jade &quot;Star Wars&quot;" title="Mara Jade &quot;Star Wars&quot;"><img src="images/MaraJadeThumb.png"/></a>
+      <a href="images/Old-ben-Obiwan-v003.jpg" class="fancybox" data-fancybox="group" data-caption="Old Ben Obi-wan  &quot;Star Wars&quot;" title="Old Ben Obi-wan  &quot;Star Wars&quot;"><img src="images/OldBenThumb.png"/></a>
+      <a href="images/MOTHER.jpg" class="fancybox" data-fancybox="group" data-caption="M.O.t.h.E.R" title="M.O.t.h.E.R"><img src="images/MOTHERThumb.png"/></a>
+      <a href="images/Scientist.jpg" class="fancybox" data-fancybox="group" data-caption="Scientist" title="Scientist"><img src="images/ScientistThumb.png"/></a>
+      <a href="images/shinobi.jpg" class="fancybox" data-fancybox="group" data-caption="Shinobi" title="Shinobi"><img src="images/ShinobiThumb.png"/></a>
+      <a href="images/Tammy.jpg" class="fancybox" data-fancybox="group" data-caption="Tammy inspired by &quot;Tamaytka&quot;" title="Tammy inspired by &quot;Tamaytka&quot;"><img src="images/tammyThumb.png"/></a>
+      <a href="images/theMage.jpg" class="fancybox" data-fancybox="group" data-caption="The Mage" title="The Mage"><img src="images/TheMageThumb.png"/></a>
+      <a href="images/RainforestHunter1.jpg" class="fancybox" data-fancybox="group" data-caption="Rainforest Hunter" title="Rainforest Hunter"><img src="images/RainforestHunterThumb.png"/></a>
+      <a href="images/Red-2.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Red&quot;" title="&quot;Red&quot;"><img src="images/red2Thumb.png"/></a>
+      <a href="images/Katana-girl.jpg" class="fancybox" data-fancybox="group" data-caption="Katana Girl" title="Katana Girl"><img src="images/KatanaGirlThumb.png"/></a>
+      <a href="images/Kara-Thrace-Starbuck-v002.jpg" class="fancybox" data-fancybox="group" data-caption="Kara Thrace &quot;Starbuck&quot; &quot;Battlestar Galactica&quot;" title="Kara Thrace &quot;Starbuck&quot; &quot;Battlestar Galactica&quot;"><img src="images/KaraThraceStarbuckThumb.png"/></a>
+      <a href="images/JudgeDredd.jpg" class="fancybox" data-fancybox="group" data-caption="Judge Dredd &quot;Judge Dredd&quot;  inspired by Greg Staples" title="Judge Dredd &quot;Judge Dredd&quot; inspired by Greg Staples"><img src="images/JudgeDreddThumb.png"/></a>
+      <a href="images/korra-v003.jpg" class="fancybox" data-fancybox="group" data-caption="Korra &quot;The Legend of Korra&quot;" title="Korra &quot;The Legend of Korra&quot;"><img src="images/korra1Thumb.png"/></a>
+      <a href="images/KananJarrus-Elletcjh.jpg" class="fancybox" data-fancybox="group" data-caption="Kanan Jarrus &quot;Star Wars - Rebels&quot;" title="Kanan Jarrus &quot;Star Wars - Rebels&quot;"><img src="images/KananJarrusThumb.png"/></a>
+      <a href="images/Deadpool.jpg" class="fancybox" data-fancybox="group" data-caption="Deadpool Inspired By &quot;ADCArtAttack&quot;" title="Deadpool Inspired By &quot;ADCArtAttack&quot;"><img src="images/DeadpoolThumb.png"/></a>
+      <a href="images/AkbarNew.jpg" class="fancybox" data-fancybox="group" data-caption="Admiral Akbar &quot;Star Wars&quot;" title="Admiral Akbar &quot;Star Wars&quot;"><img src="images/AkbarNewThumb.png"/></a>
+      <a href="images/Chloë-Re-Draw-take2.jpg" class="fancybox" data-fancybox="group" data-caption="Chloë" title="Chloë"><img src="images/ChloeThumb.png"/></a>
+      <a href="images/Alien-Xenomorph-XX121-1.jpg" class="fancybox" data-fancybox="group" data-caption="Alien Xenomorph-XX121 &quot;Alien&quot; inspired by Greg Staples" title="Alien Xenomorph-XX121 &quot;Alien&quot; inspired by Greg Staples"><img src="images/Alien-Xenomorph-XX121Thumb.png"/></a>
+      <a href="images/Bane-v001.jpg" class="fancybox" data-fancybox="group" data-caption="Bane &quot;Batman&quot;" title="Bane &quot;Batman&quot;"><img src="images/baneThumb.png"/></a>
+      <a href="images/EmoGirl.jpg" class="fancybox" data-fancybox="group" data-caption="Emo Girl" title="Emo Girl"><img src="images/EmoGirlThumb.png"/></a>
+      <a href="images/Chihiro - Spirited Away.jpg" class="fancybox" data-fancybox="group" data-caption="Chihiro/Sen &quot;Spirited Away&quot;" title="Chihiro/Sen &quot;Spirited Away&quot;"><img src="images/ChihiroThumb.png"/></a>
+      <a href="images/Olga-Kurylenko-Etain-Centurion-Art.jpg" class="fancybox" data-fancybox="group" data-caption="Olga Kurylenko &quot;Etain&quot; &quot;Centurion&quot;" title="Olga Kurylenko &quot;Etain&quot; &quot;Centurion&quot;"><img src="images/EtainThumb.png"/></a>
+      <a href="images/Red-haired-Girl.jpg" class="fancybox" data-fancybox="group" data-caption="Red-haired-Girl" title="Red-haired-Girl"><img src="images/redHairedGirlThumb.png"/></a>
+      <a href="images/Raya-andTheLastDragon-Redraw.jpg" class="fancybox" data-fancybox="group" data-caption="Raya &quot;Raya and The Last Dragon&quot;" title="Raya &quot;Raya and The Last Dragon&quot;"><img src="images/rayaThumb.png"/></a>
+      <a href="images/RepublicJedi.jpg" class="fancybox" data-fancybox="group" data-caption="Republic Jedi" title="Republic Jedi"><img src="images/RepublicJediThumb.png"/></a>
+      <a href="images/RitaVrataski-LiveDieRepeat-final.jpg" class="fancybox" data-fancybox="group" data-caption="Rita Vrataski &quot;Live Die Repeat&quot;" title="Rita Vrataski &quot;Live Die Repeat&quot;"><img src="images/ritaThumb.png"/></a>
+      <a href="images/Assassin-v001.jpg" class="fancybox" data-fancybox="group" data-caption="Assassin" title="Assassin"><img src="images/AssassinThumb.png"/></a>
+      <a href="images/daenerysTargaryen1.jpg" class="fancybox" data-fancybox="group" data-caption="Daenarys Targaryen &quot;Game of Thrones&quot;" title="Daenarys Targaryen &quot;Game of Thrones&quot;"><img src="images/daenarysTargaryenThumb.png"/></a>
+      <a href="images/Gollum-Smegol-TLOTR.jpg" class="fancybox" data-fancybox="group" data-caption="Gollum-Smegol &quot;The Lord of the Rings&quot;" title="Gollum-Smegol &quot;The Lord of the Rings&quot;"><img src="images/Gollum2Thumb.png"/></a>
+      <a href="images/gollum.jpg" class="fancybox" data-fancybox="group" data-caption="Gollum-Smegol &quot;The Lord of the Rings&quot;" title="Gollum-Smegol &quot;The Lord of the Rings&quot;"><img src="images/GollumThumb.png"/></a>
+      <a href="images/FutureMan-Tiger.jpg" class="fancybox" data-fancybox="group" data-caption="Tiger &quot;Future Man&quot;" title="Tiger &quot;Future Man&quot;"><img src="images/FutureManTigerThumb.png"/></a>
+      <a href="images/predator.jpg" class="fancybox" data-fancybox="group" data-caption="Predator &quot;Predator&quot;" title="Predator &quot;Predator&quot;"><img src="images/predatorThumb.png"/></a>
+      <a href="images/ErikLehnsherr-magneto.jpg" class="fancybox" data-fancybox="group" data-caption="Erik Lehnsherr &quot;Magneto&quot; &quot;X-Men&quot;" title="Erik Lehnsherr &quot;Magneto&quot; &quot;X-Men&quot;"><img src="images/magnetoThumb.png"/></a>
+      <a href="images/Niamh Warrior Princess-Recovered.jpg" class="fancybox" data-fancybox="group" data-caption="Niamh Warrior Princess Warrior" title="Niamh Warrior Princess Warrior"><img src="images/NiamhWarriorPrincessThumb.png"/></a>
+      <a href="images/Ming the merceless.jpg" class="fancybox" data-fancybox="group" data-caption="Ming the Merceless &quot;Flash Gordon&quot;" title="Ming the Merceless &quot;Flash Gordon&quot;"><img src="images/mingThumb.png"/></a>
+      <a href="images/LukeSkywalkerJediKnight.jpg" class="fancybox" data-fancybox="group" data-caption="Luke Skywalker Jedi Knight &quot;Star Wars&quot;" title="Luke Skywalker Jedi Knight &quot;Star Wars&quot;"><img src="images/lukeJediThumb.png"/></a>
+      <a href="images/Sophie.jpg" class="fancybox" data-fancybox="group" data-caption="Sophie" title="Sophie"><img src="images/sophieThumb.png"/></a>
+      <a href="images/StormtrooperSolo2.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Boring conversation&quot; Stormtrooper Solo &quot;Star Wars&quot;" title="&quot;Boring conversation&quot; Stormtrooper Solo &quot;Star Wars&quot;"><img src="images/SoloSTThumb.png"/></a>
+      <a href="images/Lukepilot.jpg" class="fancybox" data-fancybox="group" data-caption="Luke Skywalker X-wing pilot &quot;Star Wars&quot;" title=""><img src="images/luke-xwingrthumb.png"/></a>
+      <a href="images/princess_leia.jpg" class="fancybox" data-fancybox="group" data-caption="Princesess Leah &quot;Star Wars&quot;" title="Princesess Leah &quot;Star Wars&quot;"><img src="images/PrincesessLeahThumb.png"/></a>
+      <a href="images/PrincessLeia-Buns.jpg" class="fancybox" data-fancybox="group" data-caption="Princesess Leah &quot;Star Wars&quot;" title="Princesess Leah &quot;Star Wars&quot;"><img src="images/PrincessLeia-BunsThumb.png"/></a>
+      <a href="images/spock2.jpg" class="fancybox" data-fancybox="group" data-caption="Spock &quot;Star Trek&quot;" title="Spock &quot;Star Trek&quot;"><img src="images/Spock2lThumb.png"/></a>
+      <a href="images/SpiderGwen.jpg" class="fancybox" data-fancybox="group" data-caption="Spider Gwen &quot;Into the Spiderverse&quot;" title="Spider Gwen &quot;Into the Spiderverse&quot;"><img src="images/SpiderGwenThumb.png"/></a>
+      <a href="images/SkekSil-The Chamberlain-The Dark Crystal.jpg" class="fancybox" data-fancybox="group" data-caption="SkekSil &quot;The Chamberlain&quot; &quot;The Dark Crystal&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Please&quot;" title="SkekSil &quot;The Chamberlain&quot; &quot;The Dark Crystal&quot;"><img src="images/skeksisThumb.png"/></a>
+      <a href="images/Kena-BridgeOfSpirits.jpg" class="fancybox" data-fancybox="group" data-caption="Kena &quot;Bridge Of Spirits&quot;" title="Kena &quot;Bridge Of Spirits&quot;"><img src="images/kenaThumb.png"/></a>
+      <a href="images/JudgeDeath.jpg" class="fancybox" data-fancybox="group" data-caption="Judge Death &quot;Judge Dredd&quot;" title="Judge Death &quot;Judge Dredd&quot;"><img src="images/JudgeDeathThumb.png"/></a>
+      <a href="images/Joker.jpg" class="fancybox" data-fancybox="group" data-caption="Joker &quot;Batman&quot;" title="Joker &quot;Batman&quot;"><img src="images/jokerThumb.png"/></a>
+      <a href="images/K-VRC.jpg" class="fancybox" data-fancybox="group" data-caption="K-VRC &quot;Love, Death and Robots&quot;" title="K-VRC &quot;Love, Death and Robots&quot;"><img src="images/KvrcThumb.png"/></a>
+      <a href="images/Maul-v005.jpg" class="fancybox" data-fancybox="group" data-caption="Maul &quot;Star Wars&quot;" title="Maul &quot;Star Wars&quot;"><img src="images/maul2Thumb.png"/></a>
+      <a href="images/TheUltimateEvil.jpg" class="fancybox" data-fancybox="group" data-caption="The Ultimate Evil &quot;Time Bandits&quot;" title="The Ultimate Evil &quot;Time Bandits&quot;"><img src="images/ultamateEvilThumb.png"/></a>
+      <a href="images/carbonite1.jpg" class="fancybox" data-fancybox="group" data-caption="Han Solo in Carbonite &quot;Star Wars&quot;" title="Han Solo in Carbonite &quot;Star Wars&quot;"><img src="images/SoloCarboniteThumb.png"/></a>
+      <a href="images/Ben Solo - non Darkside.jpg" class="fancybox" data-fancybox="group" data-caption="Ben Solo - Non Darkside" title="Ben Solo - Non Darkside"><img src="images/BenSoloThumb.png"/></a>
+      <a href="images/Freckles.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Freckles&quot;" title="&quot;Freckles&quot;"><img src="images/frecklesThumb.png"/></a>
+      <a href="images/FoxyLady.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Foxy Lady&quot;" title="&quot;Foxy Lady&quot;"><img src="images/FoxyLadyThumb.png"/></a>
+      <a href="images/Kaya.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Kaya&quot;" title="&quot;Kaya&quot;"><img src="images/KayaThumb.png"/></a>
+      <a href="images/Kirk.jpg" class="fancybox" data-fancybox="group" data-caption="James T Kirk &quot;Star Trek&quot;" title="James T Kirk &quot;Star Trek&quot;"><img src="images/KirkThumb.png"/></a>
+      <a href="images/Jabba-the-Hutt.jpg" class="fancybox" data-fancybox="group" data-caption="Jabba-the-Hutt &quot;Star Wars&quot;" title="Jabba-the-Hutt &quot;Star Wars&quot;"><img src="images/JabbaThumb.png"/></a>
+      <a href="images/NightKing.jpg" class="fancybox" data-fancybox="group" data-caption="Night King &quot;Game of Thrones&quot;" title="Night King &quot;Game of Thrones&quot;"><img src="images/nightkingThumb.png"/></a>
+      <a href="images/Mathilda2.jpg" class="fancybox" data-fancybox="group" data-caption="Mathilda &quot;Leon&quot;" title="Mathilda &quot;Leon&quot;"><img src="images/Mathilda2Thumb.png"/></a>
+      <a href="images/TwistedAndEvil.jpg" class="fancybox" data-fancybox="group" data-caption="Darth Vader &quot;Twisted and Evil&quot; &quot;Star Wars&quot;" title="Darth Vader &quot;Twisted and Evil&quot; &quot;Star Wars&quot;"><img src="images/TwistedAndEvilThumb.png"/></a>
+      <a href="images/Xenomorph XX121 (Alien)2.jpg" class="fancybox" data-fancybox="group" data-caption="Xenomorph XX121 &quot;Alien&quot;" title="Xenomorph XX121 &quot;Alien&quot;"><img src="images/XenoThumb.png"/></a>
+      <a href="images/Yennifer-of-Vengerburg.jpg" class="fancybox" data-fancybox="group" data-caption="Yennifer of Vengerburg &quot;The Witcher&quot;" title="Yennifer of Vengerburg &quot;The Witcher&quot;"><img src="images/YenniferThumb.png"/></a>
+      <a href="images/General-Grievous.jpg" class="fancybox" data-fancybox="group" data-caption="General Grievous &quot;Star Wars&quot;" title="General Grievous &quot;Star Wars&quot;"><img src="images/generalGrievousThumb.png"/></a>
+      <a href="images/gemma-v001.jpg" class="fancybox" data-fancybox="group" data-caption="Gemma" title="Gemma"><img src="images/gemmaThumb.png"/></a>
+      <a href="images/Hicup-How to Train Your Dragon.jpg" class="fancybox" data-fancybox="group" data-caption="Hicup &quot;How to Train Your Dragon&quot;" title="Hicup &quot;How to Train Your Dragon&quot;"><img src="images/HicupThumb.png"/></a>
+      <a href="images/Grogu-TheMandalorian-StarWars.jpg" class="fancybox" data-fancybox="group" data-caption="Baby Yoda - Grogu &quot;The Mandalorian&quot; &quot;Star Wars&quot;" title="Baby Yoda - Grogu &quot;The Mandalorian&quot; &quot;Star Wars&quot;"><img src="images/groguThumb.png"/></a>
+      <a href="images/TheLegendOfKorra.jpg" class="fancybox" data-fancybox="group" data-caption="Korra &quot;The Legend Of Korra&quot;" title="Korra &quot;The Legend Of Korra&quot;"><img src="images/Korra5Thumb.png"/></a>
+      <a href="images/SomePoorSoul.jpg" class="fancybox" data-fancybox="group" data-caption="Some Poor Soul &quot;Alien&quot;" title="Some Poor Soul &quot;Alien&quot;"><img src="images/somepoorSoulThumb.png"/></a>
+      <a href="images/Sophia.jpg" class="fancybox" data-fancybox="group" data-caption="Sophia" title="Sophia"><img src="images/SophiaThumb.png"/></a>
+      <a href="images/soothsayer.jpg" class="fancybox" data-fancybox="group" data-caption="Soothsayer &quot;The Gemini Chronicles&quot;" title="Soothsayer &quot;The Gemini Chronicles&quot;"><img src="images/soothsayerThumb.png"/></a>
+      <a href="images/KaraThraceBSG-003.jpg" class="fancybox" data-fancybox="group" data-caption="Kara Thrace &quot;Starbuck&quot; &quot;Battlestar Galatica&quot;" title="Kara Thrace &quot;Starbuck&quot; &quot;Battlestar Galatica&quot;"><img src="images/Starbuck2Thumb.png"/></a>
+      <a href="images/Arcane-Powder-v007.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Powder" title="&quot;Arcane&quot; Powder"><img src="images/Arcane-Powder7Thumb.png"/></a>
+      <a href="images/Arcane-Powder-v009.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Powder" title="&quot;Arcane&quot; Powder"><img src="images/Arcane-Powder10Thumb.png"/></a>
+      <a href="images/Arcane-Powder-v008.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Powder" title="&quot;Arcane&quot; Powder"><img src="images/powder8Thumb.png"/></a>
+      <a href="images/powder1.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Powder" title="&quot;Arcane&quot; Powder"><img src="images/powder1Thumb.png"/></a>
+      <a href="images/arcane-league-of-legends-Jinx-v010.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Powder" title="&quot;Arcane&quot; Powder"><img src="images/powder10Thumb.png"/></a>
+      <a href="images/Arcade- Jinx- League-of-legends-v020.jpg" class="fancybox" data-fancybox="group" data-caption="Powder &quot;Arcane&quot;" title="Powder &quot;Arcane&quot;"><img src="images/Powder-gun-Thumb.png"/></a>
+      <a href="images/Jinx-008.jpg" class="fancybox" data-fancybox="group" data-caption="Jinx &quot;Arcane&quot;" title="Jinx &quot;Arcane&quot;"><img src="images/Jinx8Thumb.png"/></a>
+      <a href="images/jinxArt-v002.jpg" class="fancybox" data-fancybox="group" data-caption="Jinx &quot;Arcane&quot;" title="Jinx &quot;Arcane&quot;"><img src="images/jinxArtThumb.png"/></a>
+      <a href="images/powder-Vi-v002.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane Poster&quot; Vi and Powder" title="&quot;Arcane Poster&quot; Vi and Powder"><img src="images/powder2Thumb.png"/></a>
+      <a href="images/Arcane-LeagueOfLegends-vi-Jinx-009.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Powder" title="&quot;Arcane&quot; Powder"><img src="images/Arcane-Powder9Thumb.png"/></a>
+      <a href="images/Arcane-LeagueOfLegends-Jinx-v0100.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Jinx" title="&quot;Arcane&quot; Jinx"><img src="images/JinxRooftop-Thumb.png"/></a>
+      <a href="images/arcane - jinxs - league of legends-v007-a.jpg" class="fancybox" data-fancybox="group" data-caption="Powder &quot;Arcane&quot;" title="Powder &quot;Arcane&quot;"><img src="images/powder6Thumb.png"/></a>
+      <a href="images/Arcane-LeagueOfLegends-vi-Jinx-008.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Vi and Powder" title="&quot;Arcane&quot; Vi and Powder"><img src="images/Arcane-PowderYoungThumb.png"/></a>
+      <a href="images/powder3.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Powder" title="&quot;Arcane&quot; Powder"><img src="images/powder3Thumb.png"/></a>
+      <a href="images/Arcane-LeagueOfLegends-Jinx-v006.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Jinx" title="&quot;Arcane&quot; Jinx"><img src="images/jinx6Thumb.png"/></a>
+      <a href="images/Jinx-v007.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Jinx" title="&quot;Arcane&quot; Jinx"><img src="images/jinx7Thumb.png"/></a>
+      <a href="images/Powder-V020.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Powder" title="&quot;Arcane&quot; Powder"><img src="images/Powder20Thumb.png"/></a>
+      <a href="images/Powder-V003.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Powder" title="&quot;Arcane&quot; Powder"><img src="images/Powder21Thumb.png"/></a>
+      <a href="images/Arcane-leagueoflegends-vi-jinx.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Vi and Jinx" title="&quot;Arcane&quot; Vi and Jinx"><img src="images/Vi-Powder14Thumb.png"/></a>
+      <a href="images/Arcane - League of legends - Vi-v002.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Vi" title="&quot;Arcane&quot; Vi"><img src="images/Vi2Thumb.png"/></a>
+      <a href="images/Arcane-Mylo-Vi-Claggor-Powder.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Mylo, Vi, Claggor and Powder" title="&quot;Arcane&quot; Mylo, Vi, Claggor and Powder"><img src="images/VigangThumb.png"/></a>
+      <a href="images/Vi-009.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Vi" title="&quot;Arcane&quot; Vi"><img src="images/vi9Thumb.png"/></a>
+      <a href="images/Arcane-Vi-and-Powder-v011.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Vi and Powder" title="&quot;Arcane&quot; Vi and Powder"><img src="images/Vi-Powder13Thumb.png"/></a>
+      <a href="images/Arcane-EkkoAndHeimerdinger.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Ekko and Heimerdinger" title="&quot;Arcane&quot; Ekko and Heimerdinger"><img src="images/ekkoHeimerdingerThumb.png"/></a>
+      <a href="images/Mel-LeagueOfLegends.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Mel" title="&quot;Arcane&quot; Mel"><img src="images/MelThumb.png"/></a>
+      <a href="images/arcane-Caitlyn-v001.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Arcane&quot; Caitlyn" title="&quot;Arcane&quot; Caitlyn"><img src="images/CaitlynThumb.png"/></a>
+      <a href="images/HanSoloHOTH.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;HOTH&quot; Han Solo" title="&quot;HOTH&quot; Han Solo"><img src="images/HanSoloHothThumb.png"/></a>
+      <a href="images/Batman.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Batman&quot;" title="&quot;Batman&quot;"><img src="images/batmanThumb.png" class=" title="Batman" /></a>
+      <a href="images/Robin.jpg"  class="fancybox" data-fancybox="group" data-caption="&quot;Robin&quot; Batman" title="&quot;Robin&quot; Batman"><img src="images/robinThumb.png" class="fancybox" title="Robin - Batman" /></a>
+      <a href="images/Senua-Hellblade-Senuas-Sacrifice.jpg"  class="fancybox" data-fancybox="group" data-caption="&quot;Hellblade&quot; &quot;Senuas Sacrifice&quot; Senua" title="&quot;Hellblade&quot; &quot;Senuas Sacrifice&quot; Senua"><img src="images/SenuaThumb.png" class="fancybox" title="Senua - Hellblade - Senuas-Sacrifice" /></a></li>
+      <a href="images/Aloy-HorizonZeroDawn.jpg"  class="fancybox" data-fancybox="group" data-caption="&quot;Aloy&quot; Horizon Zero Dawn" title="&quot;Aloy&quot; Horizon Zero Dawn"><img src="images/aloyThumb.png" class="fancybox" title="Aloy - Horizon Zero Dawn" /></a>
+      <a href="images/cadBane2.jpg" class="fancybox" data-fancybox="group" data-caption="Cad Bane &quot;Star Wars&quot;" title="Cad Bane &quot;Star Wars&quot;"><img src="images/cadBaneThumb.png"/></a>      
+      <a href="images/AgentCarter.jpg" class="fancybox" data-fancybox="group" data-caption="Agent Carter" title="Agent Carter"><img src="images/AgentCarterThumb.png"/></a>
+      <a href="images/Davy Jones - Pirates of the Caribbean.jpg" class="fancybox" data-fancybox="group" data-caption="Davy Jones &quot;Pirates of the Caribbean&quot;" title="Davy Jones &quot;Pirates of the Caribbean&quot;"><img src="images/DaveyJonesThumb.png"/></a>
+      <a href="images/AldenEhrenreich-HanSolo.jpg" class="fancybox" data-fancybox="group" data-caption="Alden Ehrenreich &quot;Han Solo&quot; &quot;Star Wars&quot;" title="Alden Ehrenreich &quot;Han Solo&quot; &quot;Star Wars&quot;"><img src="images/YoungHanThumb.png"/></a>
+      <a href="images/lando-calrissian-childish-gambino-donald-glover-star-wars.jpg" class="fancybox" data-fancybox="group" data-caption="Donald Glover &quot;Lando Calrissian&quot; &quot;Star Wars&quot;" title="Donald Glover &quot;Lando Calrissian&quot; &quot;Star Wars&quot;"><img src="images/YoungLandoThumb.png"/></a>
+      <a href="images/mysticGirl.jpg" class="fancybox" data-fancybox="group" data-caption="Mystic Girl" title="Mystic Girl"><img src="images/MysticGirlThumb.png"/></a>
+      <a href="images/Medic2.jpg" class="fancybox" data-fancybox="group" data-caption="Cyberpunk Medic" title="Cyberpunk Medic"><img src="images/Medic2Thumb.png"/></a>
+      <a href="images/OrnëTheArcher-TheGeminiChronicles2.jpg" class="fancybox" data-fancybox="group" data-caption="Ornë The Archer &quot;The Gemini Chronicles&quot;" title="Ornë The Archer &quot;The Gemini Chronicles&quot;"><img src="images/OrneThumb.png"/></a>
+      <a href="images/TanyaArcher.jpg" class="fancybox" data-fancybox="group" data-caption="Tanya the Archer &quot;The Gemini Chronicles&quot;" title="Tanya the Archer &quot;The Gemini Chronicles&quot;"><img src="images/TanyaThumb.png"/></a>
+      <a href="images/PeterBParker.jpg" class="fancybox" data-fancybox="group" data-caption="Peter B Parker &quot;Into The Spiderverse&quot;" title="Peter B Parker &quot;Into The Spiderverse&quot;"><img src="images/PeterBParkerThumb.png"/></a>
+      <a href="images/JasonMomoa-BabaVoss-See.jpg" class="fancybox" data-fancybox="group" data-caption="Jason Momoa &quot;Baba Voss&quot; &quot;See&quot;" title="Jason Momoa &quot;Baba Voss&quot; &quot;See&quot;"><img src="images/seeThumb.png"/></a>
+      <a href="images/LauraLogan2Art.jpg" class="fancybox" data-fancybox="group" data-caption="Laura Logan &quot;Logan&quot;" title="Laura Logan &quot;Logan&quot;"><img src="images/LauraLogan2Thumb.png"/></a>
+      <a href="images/procreator-7.jpg" class="fancybox" data-fancybox="group" data-caption="Alien King/Procreator &quot;Alien&quot;" title="Alien King/Procreator &quot;Alien&quot;"><img src="images/alienrthumb.png"/></a>
+      <a href="images/ScarletWitch.jpg" class="fancybox" data-fancybox="group" data-caption="Wanda Maximoff &quot;The Scarlet Witch&quot;" title="Wanda Maximoff &quot;The Scarlet Witch&quot;"><img src="images/ScarletWitchThumb.png"/></a>
+      <a href="images/Saruman.jpg" class="fancybox" data-fancybox="group" data-caption="Saruman &quot;The Lord of the Rings&quot;" title="Saruman &quot;The Lord of the Rings&quot;"><img src="images/sarumanThumb.png"/></a>
+      <a href="images/Spiderman-v001.jpg" class="fancybox" data-fancybox="group" data-caption="Spiderman" title="Spiderman"><img src="images/SpidermanThumb.png"/></a>
+      <a href="images/Michael-Fassbender.jpg" class="fancybox" data-fancybox="group" data-caption="Michael Fassbender" title="Michael Fassbender"><img src="images/MichaelFassbenderThumb.png"/></a>
+      <a href="images/Loki-Sylvie.jpg" class="fancybox" data-fancybox="group" data-caption="Sylvie &quot;Loki&quot;" title="Sylvie &quot;Loki&quot;"><img src="images/sylvieThumb.png"/></a>
+      <a href="images/Natalie2.jpg" class="fancybox" data-fancybox="group" data-caption="Natalie" title="Natalie"><img src="images/Natalie2Thumb.png"/></a>
+      <a href="images/Pre-Cobonite Han Solo.jpg" class="fancybox" data-fancybox="group" data-caption="Pre-Cobonite Han Solo &quot;Star Wars&quot;" title="Pre-Cobonite Han Solo &quot;Star Wars&quot;"><img src="images/Pre-Cobonite Han SoloThumb.png"/></a>
+      <a href="images/R2D2-2.jpg" class="fancybox" data-fancybox="group" data-caption="R2D2 &quot;Star Wars&quot;" title="R2D2 &quot;Star Wars&quot;"><img src="images/R2D2-2Thumb.png"/></a>
+      <a href="images/Quorra.jpg" class="fancybox" data-fancybox="group" data-caption="Quorra &quot;Tron Legacy&quot;" title="Quorra &quot;Tron Legacy&quot;"><img src="images/QuorraThumb.png"/></a>
+      <a href="images/Spock-1.jpg" class="fancybox" data-fancybox="group" data-caption="Spock &quot;Star Trek&quot;" title="Spock &quot;Star Trek&quot;"><img src="images/SpockThumb.png"/></a>
+      <a href="images/StarWars-Finn.jpg" class="fancybox" data-fancybox="group" data-caption="Finn &quot;Star Wars&quot;" title="Finn &quot;Star Wars&quot;"><img src="images/FinnThumb.png"/></a>
+      <a href="images/Hazel.jpg" class="fancybox" data-fancybox="group" data-caption="Hazel &quot;The Gemini Chronicles&quot;" title=""><img src="images/HazelThumb.png"/></a>
+      <a href="images/Harley Quinn.jpg" class="fancybox" data-fancybox="group" data-caption="Harley Quinn &quot;Batman&quot;" title="Harley Quinn &quot;Batman&quot;"><img src="images/HarleyQuinnThumb.png"/></a>
+      <a href="images/Hermione Granger.jpg" class="fancybox" data-fancybox="group" data-caption="Hermione Granger &quot;Harry Potter&quot;" title="Hermione Granger &quot;Harry Potter&quot;"><img src="images/HermioneGrangerThumb.png"/></a>
+      <a href="images/JynErso-art.jpg" class="fancybox" data-fancybox="group" data-caption="Jyn Erso &quot;Star Wars&quot;" title="Jyn Erso &quot;Star Wars&quot;"><img src="images/JynErsoThumb.png"/></a>
+      <a href="images/JudgeAnderson.jpg" class="fancybox" data-fancybox="group" data-caption="Judge Anderson &quot;Judge Dredd&quot; inspired by Greg Staples" title="Judge Anderson &quot;Judge Dredd&quot; inspired by Greg Staples"><img src="images/JudgeAndersonThumb.png"/></a>
+      <a href="images/heterochromia-girl.jpg" class="fancybox" data-fancybox="group" data-caption="Heterochromia Girl" title="Heterochromia Girl"><img src="images/HeterochromiaThumb.png"/></a>
+      <a href="images/tmntRaphael.jpg" class="fancybox" data-fancybox="group" data-caption="Raphael &quot;Teenage Mutant Ninja Turtles&quot;" title="Raphael &quot;Teenage Mutant Ninja Turtles&quot;"><img src="images/TMNTRaphaelThumb.png"/></a>
+      <a href="images/Vision.jpg" class="fancybox" data-fancybox="group" data-caption="Vision &quot;The Avengers&quot;" title="Vision &quot;The Avengers&quot;"><img src="images/VisionThumb.png"/></a>
+      <a href="images/Vercia-CharlieDontSurf.jpg" class="fancybox" data-fancybox="group" data-caption="Vercia &quot;Charlie Dont Surf&quot;" title="Vercia &quot;Charlie Dont Surf&quot;"><img src="images/VerciaThumb.png"/></a>
+      <a href="images/TombRaider-LaraCroft-AliciaVakander.jpg" class="fancybox" data-fancybox="group" data-caption="Alicia Vakander as Lara Croft &quot;Tomb Raider&quot;" title="Alicia Vakander as Lara Croft &quot;Tomb Raider&quot;"><img src="images/LaraCroftThumb.png"/></a>
+      <a href="images/Cyberpunk Medic.jpg" class="fancybox" data-fancybox="group" data-caption="Cyberpunk Medic" title="Cyberpunk Medic"><img src="images/McAvoyThumb.png"/></a>
+      <a href="images/Gamora.jpg" class="fancybox" data-fancybox="group" data-caption="Gamora &quot;Guardians of the Galaxy&quot;" title="Gamora &quot;Guardians of the Galaxy&quot;"><img src="images/GamoraThumb.png"/></a>
+      <a href="images/Cyberpunk-Mechanic.jpg" class="fancybox" data-fancybox="group" data-caption="Cyberpunk Mechanic" title="Cyberpunk Mechanic"><img src="images/CyberpunkMechanicThumb.png"/></a>
+      <a href="images/Hannah-v002.jpg" class="fancybox" data-fancybox="group" data-caption="Hannah" title="Hannah"><img src="images/HannahThumb.png"/></a>
+      <a href="images/HazelBoom.jpg" class="fancybox" data-fancybox="group" data-caption="Hazel &quot;The Gemini Chronicles&quot;" title="Hazel &quot;The Gemini Chronicles&quot;"><img src="images/HazelBoomThumb.png"/></a>
+      <a href="images/Emma.jpg" class="fancybox" data-fancybox="group" data-caption="Emma Watson" title="Emma Watson"><img src="images/emma2Thumb.png"/></a>
+      <a href="images/WalkenSolo-fastShip-tomasoverbai.jpg" class="fancybox" data-fancybox="group" data-caption="Walken Solo &quot;Fast Ship&quot; &quot;Inspired by Tomasoverbai&quot;" title="Walken Solo &quot;Fast Ship&quot; &quot;Inspired by Tomasoverbai&quot;"><img src="images/walkenSoloThumb.png"/></a>
+      <a href="images/Bo-Kayan Kryse Star Wars - Clone Wars - The Mandalorian.jpg" class="fancybox" data-fancybox="group" data-caption="Bo-Kayan Kryse &quot;Star Wars&quot; - &quot;Clone Wars&quot; - &quot;The Mandalorian&quot;" title="Bo-Kayan Kryse &quot;Star Wars&quot; - &quot;Clone Wars&quot; - &quot;The Mandalorian&quot;"><img src="images/BoKatanKryzeThumb.png"/></a>
+      <a href="images/BabyGroot.jpg" class="fancybox" data-fancybox="group" data-caption="Baby Groot &quot;Guardians of the galaxy&quot;" title="Baby Groot &quot;Guardians of the galaxy&quot;"><img src="images/BabyGrootThumb.png"/></a>
+      <a href="images/bobaFett.jpg" class="fancybox" data-fancybox="group" data-caption="Boba Fett &quot;Star Wars&quot;" title="Boba Fett &quot;Star Wars&quot;"><img src="images/BobaFettThumb.png"/></a>
+      <a href="images/Catwoman.jpg" class="fancybox" data-fancybox="group" data-caption="Catwoman &quot;Batman&quot;" title="Catwoman &quot;Batman&quot;"><img src="images/catwomanThumb.png"/></a>
+      <a href="images/arya-v001.jpg" class="fancybox" data-fancybox="group" data-caption="Arya &quot;Game of Thrones&quot;" title="Arya &quot;Game of Thrones&quot;"><img src="images/arya1Thumb.png"/></a>
+      <a href="images/eddardStark1.jpg" class="fancybox" data-fancybox="group" data-caption="Eddard Stark &quot;Game of Thrones&quot;" title="Eddard Stark &quot;Game of Thrones&quot;"><img src="images/eddardThumb .png"/></a>
+      <a href="images/HanSoloInCarconite.jpg" class="fancybox" data-fancybox="group" data-caption="Han Solo In Carconite &quot;Star Wars&quot;" title="Han Solo In Carconite &quot;Star Wars&quot;"><img src="images/HanSoloInCarconiteThumb.png"/></a>
+      <a href="images/Lightyear-Space-Ranger.jpg" class="fancybox" data-fancybox="group" data-caption="Izzy Hawthorne &quot;Lightyear&quot;" title="Izzy Hawthorne &quot;Lightyear&quot;"><img src="images/lightyearThumb.png"/></a>
+      <a href="images/slowDayInTheStarWarsUniverse.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;Slow Day In The Star Wars Universe&quot;" title="&quot;Slow Day In The Star Wars Universe&quot;"><img src="images/slowDaySWThumb.png"/></a>
+      <a href="images/korra-v007.jpg" class="fancybox" data-fancybox="group" data-caption="Korra &quot;The Legend of Korra&quot;" title="Korra &quot;The Legend of Korra&quot;"><img src="images/korra7Thumb.png"/></a>
+      <a href="images/The Mandalorian.jpg" class="fancybox" data-fancybox="group" data-caption="The Mandalorian &quot;Star Was&quot;" title="The Mandalorian &quot;Star Was&quot;"><img src="images/mandalorianThumb.png"/></a>
+      <a href="images/TheHexWarrior.jpg" class="fancybox" data-fancybox="group" data-caption="The Hex Warrior &quot;The Gemini Chronicles&quot;" title="The Hex Warrior &quot;The Gemini Chronicles&quot;"><img src="images/TheHexWarriorThumb.png"/></a>
+      <a href="images/lolly.jpg" class="fancybox" data-fancybox="group" data-caption="&quot;lolly&quot;" title="&quot;lolly&quot;"><img src="images/LollyThumb.png"/></a>
+      <a href="images/DafneKeen-Laura-Logan.jpg" class="fancybox" data-fancybox="group" data-caption="Dafne Keen &quot;Laura Logan&quot;" title="Dafne Keen &quot;Laura Logan&quot;"><img src="images/LoganLauraThumb.png"/></a>
+      <a href="images/Tommorow-War.jpg" class="fancybox" data-fancybox="group" data-caption="Dan Forester &quot;Tommorow-War&quot;" title="Dan Forester &quot;Tommorow-War&quot;"><img src="images/TomorrowWarThumb.png"/></a>
+      <a href="images/lando.jpg" class="fancybox" data-fancybox="group" data-caption="Lando Calrissian &quot;Star Wars&quot;" title="Lando Calrissian &quot;Star Wars&quot;"><img src="images/LandoThumb.png"/></a>
+      <a href="images/Ray-StarWars.jpg" class="fancybox" data-fancybox="group" data-caption="Ray &quot;Star Wars&quot;" title="Ray &quot;Star Wars&quot;"><img src="images/RayThumb.png"/></a>
+      <a href="images/StripeyGirl.jpg" class="fancybox" data-fancybox="group" data-caption="Stripey Girl" title="Stripey Girl"><img src="images/StripyGirlThumb.png"/></a>
+      <a href="images/Legend of korra-v004.jpg" class="fancybox" data-fancybox="group" data-caption="Legend of korra &quot;Korra&quot;" title="Legend of korra &quot;Korra&quot;"><img src="images/korra4Thumb.png"/></a>
+      <a href="images/TheKurgan-Highlander.jpg" class="fancybox" data-fancybox="group" data-caption="The Kurgan &quot;Highlander&quot;" title="The Kurgan &quot;Highlander&quot;"><img src="images/KurganThumb.png"/></a>
+      <a href="images/Maia.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;&quot;" title=""><img src="images/maiaThumb.png"/></a> 
+      <a href="images/Luther-TheWarriors-come-Out-To-Play-i-ay.jpg" class="fancybox" data-fancybox="group" data-caption="Luther &quot;The Warriors&quot; &quot;Come Out To Play-i-ay&quot;" title="Luther &quot;The Warriors&quot; &quot;Come Out To Play-i-ay&quot;"><img src="images/lutherThumb.png"/></a>
+      <a href="images/Lauren.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Lauren&quot;" title="&quot;Lauren&quot;"><img src="images/LaurenThumb.png"/></a>
+      <a href="images/Phoebe-v001.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Phoebe&quot;" title="&quot;Phoebe&quot;"><img src="images/PhoebeThumb.png"/></a>
+      <a href="images/SWPiolet2.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Star Wars Piolet&quot;" title="&quot;Star Wars Piolet&quot;"><img src="images/SWPioletThumb.png"/></a>
+      <a href="images/toughGirl.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Tough Girl&quot;" title="&quot;Tough Girl&quot;"><img src="images/ToughGirlThumb.png"/></a>
+      <a href="images/Unknown-9-v002.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Unknown 9&quot;" title="&quot;Unknown 9&quot;"><img src="images/Unknown-9Thumb.png"/> </a>
+      <a href="images/TheWidow-IntoTheBadlands.jpg" class="fancybox" data-fancybox="group" data-caption="The Widow  &quot;Into The Badlands&quot;" title="The Widow  &quot;Into The Badlands&quot;"><img src="images/TheWidow-IntoTheBadlandsThumb.png"/></a>
+      <a href="images/super-8.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;super 8&quot;" title="&quot;super 8&quot;"><img src="images/Super8Thumb.png"/></a>
+      <a href="images/Cobb-Vanth.jpg" class="fancybox" data-fancybox="group" data-caption="Cobb Vanth &quot;The Mandalorian&quot;" title="Cobb Vanth &quot;The Mandalorian&quot;"><img src="images/CobbVanthThumb.png"/></a>  
+      <a href="images/DarkYoda.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Dark Yoda&quot;" title="&quot;Dark Yoda&quot;"><img src="images/DarkYodaThumb.png"/></a>
+      <a href="images/DrStrange.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Dr Strange&quot;" title="&quot;Dr Strange&quot;"><img src="images/DrStrangeThumb.png"/></a>
+      <a href="images/ray-v002.jpg" class="fancybox" data-fancybox="group" data-caption="Ray &quot;Star Wars&quot;" title="Ray &quot;Star Wars&quot;"><img src="images/ray-2-Thumb.png"/></a>
+      <a href="images/WomanSuperhero3.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Woman Superhero&quot;" title="&quot;Woman Superhero&quot;"><img src="images/WomanWarriorthumb.png"/></a>
+      <!-- <a href="images/JediPush.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Jedi Push&quot;" title="&quot;Jedi Push&quot;"><img src="images/JediPushThumb.png"/></a> -->
+      <a href="images/Sheila-The-Thief-Dungeons&Dragons.jpg" class="fancybox" data-fancybox="group" data-caption="Sheila The Thief &quot;Dungeons & Dragons&quot;" title="Sheila The Thief &quot;Dungeons & Dragons&quot;"><img src="images/Sheila-The-Thief-thumb.png"/></a>
+      <a href="images/Cara-v002.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Cara&quot;" title="&quot;Cara&quot;"><img src="images/CaraDThumb.png"/></a>
+      <a href="images/ConneryRedOktober.jpg" class="fancybox" data-fancybox="group" data-caption="Connery &quot;Red Oktober&quot;" title="Connery &quot;Red Oktober&quot;"><img src="images/OktoberThumb.png"/></a>
+      <a href="images/maul-3.jpg" class="fancybox" data-fancybox="group" data-caption="Darth Maul &quot;Star Wars&quot;" title="Darth Maul &quot;Star Wars&quot;"><img src="images/MaulThumb.png"/></a>
+      <!-- <a href="images/Tyler_Durden.jpg" class="fancybox" data-fancybox="group" data-caption="Tyler Durden &quot;Fight Club&quot;" title="Tyler Durden &quot;Fight Club&quot;"><img src="images/TylerThumb.png"/></a> -->
+      <a href="images/Thor.jpg" class="fancybox" data-fancybox="group" data-caption="Thor &quot;Thor Ragnarok&quot;" title="Thor &quot;Thor Ragnarok&quot;"><img src="images/ThorThumb.png"/></a>
+      <a href="images/Warroir-The_Gemini_Chronicles.jpg" class="fancybox" data-fancybox="group" data-caption="Warroir &quot;The Gemini Chronicles&quot;" title="Warroir &quot;The Gemini Chronicles&quot;"><img src="images/WarriorThumb.png"/></a>
+      <a href="images/Rocket.jpg" class="fancybox" data-fancybox="group" data-caption="Rocket &quot;Guardians of the galaxy&quot;" title="Rocket &quot;Guardians of the galaxy&quot;"><img src="images/RocketThumb.png"/></a>
+     
+      <a href="images/RoxyFinal.jpg" class="fancybox" data-fancybox="group" data-caption="Roxy Ricter &quot;Scott Pilgrim vs the Wolrd&quot;" title="Roxy Ricter &quot;Scott Pilgrim vs the Wolrd"><img src="images/RoxyThumb.png"/></a>
+      <a href="images/Dooku.jpg" class="fancybox" data-fancybox="group" data-caption="Count Dooku &quot;Star Wars&quot;" title="Count Dooku &quot;Star Wars&quot;"><img src="images/DookuThumb.png"/></a>
+      <a href="images/WarrenMummy.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Warren Mummy&quot;" title="&quot;Warren Mummy&quot;"><img src="images/MummyWarrenThumb.png"/></a>
+      <a href="images/VampMark.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Vampire Mark&quot;" title="&quot;Vampire Mark&quot;"><img src="images/VampMarkThumb.png"/></a>
+    
+      <a href="images/katara.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Katara&quot;" title=""><img src="images/KataraThumb.png"/></a>
+    
+      <a href="images/CartoonVad.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Vader&quot;" title="&quot;Vader&quot;"><img src="images/cartoonVaderThumb.png"/></a>     
+      <a href="images/batgirl.jpg" class="fancybox" data-fancybox="group" data-caption="Batgirl &quot;Batman&quot;" title="Batgirl &quot;Batman&quot;"><img src="images/batgirlThumb.png"/></a>
+      <a href="images/maiden.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Maiden&quot;" title="&quot;Maiden&quot;"><img src="images/maidenThumb.png"/></a>
+      <a href="images/deathOfTheEndless2.jpg" class="fancybox" data-fancybox="group" data-caption="Death - The Endless &quot;Sandman&quot;" title="Death - The Endless &quot;Sandman&quot;"><img src="images/DeathOfTheEndless2Thumb.png"/></a>
+      <a href="images/darkProgeny.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Dark Progeny - Luke Skywalker - Star Wars&quot;" title="&quot;Dark Progeny - Luke Skywalker - Star Wars&quot;"><img src="images/darkProgenyThumb.png"/></a>
+      <a href="images/jennaOrtega-wednesday.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Jenna Ortega - Wednesday&quot;" title="&quot;Jenna Ortega - Wednesday&quot;"><img src="images/JO-wednesdayThumb.png"/></a>
+      <a href="images/hermione-Granger-art.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Hermione Granger Mixing Potions&quot;" title="&quot;Hermione Granger Mixing Potions&quot;"><img src="images/hermioneThumb.png"/></a>
+      <a href="images/AI-warrior-elf-2.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Warrior Elf&quot;" title="&quot;Warrior Elf&quot;"><img src="images/AI-ElfThumb.png"/></a>
+      <a href="images/korra-art-2-v008.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Korra&quot;" title="&quot;Korra&quot;"><img src="images/korra8Thumb.png"/></a>
+      <a href="images/CelticWarrior.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Celtic Warrior&quot;" title="&quot;Celtic Warrior&quot;"><img src="images/celticWarriorThumb.png"/></a>
+      <a href="images/JudgeDredd3.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Judge Dredd&quot;" title="&quot;Judge Dredd&quot;"><img src="images/Dredd3Thumb.png"/></a>
+      <a href="images/JudgeFila.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Judge Fila&quot;" title="&quot;Judge Fila&quot;"><img src="images/judgeFilaThumb.png"/></a>
+      <a href="images/AnneRamsey.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Anne Ramsey&quot;" title="&quot;Anne Ramsey&quot;"><img src="images/AnneRamseyThumb.png"/></a>
+      <a href="images/MasterMind.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Master Mind&quot;" title="&quot;Master Mind&quot;"><img src="images/MasterMindThumb.png"/></a>
+      <a href="images/JudgeDredd4.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Judge Dredd&quot;" title="&quot;Judge Dredd&quot;"><img src="images/JudgeDredd4Thumb.png"/></a>
+      <a href="images/ThePunch.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;The Punch&quot;" title="&quot;The Punch&quot;"><img src="images/ThePunchThumb.png"/></a>
+      <a href="images/Major.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Major&quot;" title="&quot;Major&quot;"><img src="images/MajorThumb.png"/></a>
+      <a href="images/Anger.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Anger&quot;" title="&quot;Anger&quot;"><img src="images/angerThumb.png"/></a>
+      <!-- <a href="images/drunkard.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;The Drunkard&quot;" title="&quot;The Drunkard&quot;"><img src="images/DrunkardThumb.png"/></a> -->
+      <!-- <a href="images/Rage.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Rage&quot;" title="&quot;Rage&quot;"><img src="images/rageThumb.png"/></a> -->
+      <a href="images/MedMan1.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Medicine Man&quot;" title="&quot;Medicine Man&quot;"><img src="images/ConneryThumb.png"/></a>
+      <!-- <a href="images/lady.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Lady&quot;" title="&quot;Lady&quot;"><img src="images/LadyThumb.png"/></a> -->
+      <a href="images/barcoded.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Barcoded&quot;" title="&quot;Barcoded&quot;"><img src="images/barcodedThumb.png"/></a>
+      <!-- <a href="images/JudgeDredd5.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Judge Dredd&quot;" title="&quot;Judge Dredd&quot;"><img src="images/JudgeDredd5Thumb.png"/></a> -->
+      <a href="images/Raptor.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Baby Raptor&quot;" title="&quot;Baby Raptor&quot;"><img src="images/raptorThumb.png"/></a>
+      <a href="images/Giger'sAlien.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Giger's Alien&quot;" title="&quot;Giger's Alien&quot;"><img src="images/GigerAlienThumb.png"/></a>
+      <!-- <a href="images/McClaine.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Die Hard&quot;" title="&quot;Die Hard&quot;"><img src="images/McClaineThumb.png"/></a> -->
+      <!-- <a href="images/Hello.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Hello&quot;" title="&quot;Hello&quot;"><img src="images/helloThumb.png"/></a> -->
+      <a href="images/BandNamedZombies.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Zombies&quot;" title="&quot;Zombies&quot;"><img src="images/ZombiesThumb.png"/></a>
+      <a href="images/Albarn-blur.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Alburn&quot;" title="&quot;Alburn&quot;"><img src="images/Alburn-blurThumb.png"/></a>
+      <a href="images/AlmostAnAngel.jpg" class="fancybox" data-fancybox="group" data-caption=" &quot;Almost An Angel&quot;" title="&quot;Almost An Angel&quot;"><img src="images/AlmostAnAngelThumb.png"/></a>
+
+
+      <!-- <a href="images/" class="fancybox" data-fancybox="group" data-caption=" &quot;&quot;" title=""><img src="images/"/></a> -->
+        </p>
+        </div>
+          </div>
+            </div>
+              </div>
+      </section>        
+     
+    
+      <!-- End Gallery -->
+      <!-- AudioPlayer start -->
+    <section class="music-bg"> 
+    <div class="Music center" id="music">
+    <div class="music-about">
+      <h6 class="animatedGradient2">Music</h6>
+      <div>
+      <div class="music-m-c"><h2>
+    <!-- <span class="m-c">T</span><span class="m-c">h</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">s</span><span class="m-c">o</span><span class="m-c">m</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">o</span><span class="m-c">f</span><span class="m-c">&nbsp;</span><span class="m-c">t</span><span class="m-c">h</span><span class="m-c">e</span><br><span class="m-c">m</span><span class="m-c">u</span><span class="m-c">s</span><span class="m-c">i</span><span class="m-c">c</span><span class="m-c">&nbsp;</span><span class="m-c">t</span><span class="m-c">h</span><span class="m-c">a</span><span class="m-c">t</span><span class="m-c">&nbsp;</span><span class="m-c">I</span><span class="m-c">&nbsp;</span><span class="m-c">l</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">t</span><span class="m-c">e</span><span class="m-c">n</span><span class="m-c">&nbsp;</span><span class="m-c">t</span><span class="m-c">o</span><span class="m-c">.</span><br><br> -->
+    
+    <span class="m-c">T</span><span class="m-c">h</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">n</span><span class="m-c">o</span><span class="m-c">t</span><span class="m-c">&nbsp;</span><span class="m-c">m</span><span class="m-c">y</span><span class="m-c">&nbsp;</span><span class="m-c">e</span><span class="m-c">n</span><span class="m-c">t</span><span class="m-c">i</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">c</span><span class="m-c">o</span><span class="m-c">l</span><span class="m-c">l</span><span class="m-c">e</span><span class="m-c">c</span><span class="m-c">t</span><span class="m-c">i</span><span class="m-c">o</span><span class="m-c">n</span><span class="m-c">&nbsp;</span><span class="m-c">o</span><span class="m-c">f</span><span class="m-c">&nbsp;</span><span class="m-c">m</span><span class="m-c">u</span><span class="m-c">s</span><span class="m-c">i</span><span class="m-c">c</span><span class="m-c">.</span><span class="m-c">&nbsp;</span><br>
+    
+      <span class="m-c">T</span><span class="m-c">h</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">j</span><span class="m-c">u</span><span class="m-c">s</span><span class="m-c">t</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">&nbsp;</span><span class="m-c">p</span><span class="m-c">l</span><span class="m-c">a</span><span class="m-c">y</span><span class="m-c">l</span><span class="m-c">i</span><span class="m-c">s</span><span class="m-c">t</span><span class="m-c">.</span><span class="m-c">&nbsp;</span><span class="m-c">T</span><span class="m-c">r</span><span class="m-c">a</span><span class="m-c">c</span><span class="m-c">k</span><span class="m-c">s</span><span class="m-c">&nbsp;</span><span class="m-c">t</span><span class="m-c">h</span><span class="m-c">a</span><span class="m-c">t</span><span class="m-c">&nbsp;</span><span class="m-c">m</span><span class="m-c">a</span><span class="m-c">d</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">a</span><span class="m-c">&nbsp;</span><br><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">a</span><span class="m-c">l</span><span class="m-c">&nbsp;</span><span class="m-c">d</span><span class="m-c">i</span><span class="m-c">f</span><span class="m-c">f</span><span class="m-c">e</span><span class="m-c">r</span><span class="m-c">e</span><span class="m-c">n</span><span class="m-c">c</span><span class="m-c">e</span><span class="m-c">&nbsp;</span><span class="m-c">i</span><span class="m-c">n</span><span class="m-c">&nbsp;</span><span class="m-c">M</span><span class="m-c">y</span><span class="m-c">&nbsp;</span><span class="m-c">l</span><span class="m-c">i</span><span class="m-c">f</span><span class="m-c">e</span><span class="m-c">.</span><span class="m-c">.</span><span class="m-c">.</span>
+      </h2>
+      <br><br><br><br><br><br><br><br>
+      <!-- <h2><br>These are some of the music that I Listen to.
+        <br>This is not my entire collection of music,<br><br> 
+        This is just a playlist, <br> 
+        tracks that made a real difference in My life.</h2> -->
+    </div> 
+    </div> 
+    </div> 
+    <br><br><br><br><br><br>
+      <div><audio controls id="audioPlayer"></audio>
+        <br><br><br><br>
+    <ul id="playlist">
+      <li><a href="mp3/Escusha Me.mp3"><h3>Guts 'Escusha Me'</h3></a></li>             
+      <!-- <li><a href="mp3/Morris Call .mp3"><h4>James Delarre & Saul Rose 'Morris Call'</h4></a></li> -->
+      <li><a href="mp3/Funnybones & Lazylegs.mp3"><h3>Xploding Plastix 'Funnybones & Lazylegs'</h3></a></li>          
+    <li><a href="mp3/Plasmic Head.mp3"><h3>Freakniks 'Plasmic Head'</h3></a></li>     
+    <li><a href="mp3/Train.mp3"><h3>9 Lazy 9  'Train'</h3></a></li>    
+    <li><a href="mp3/Underground Crown Holders.mp3"><h3>Aim  'Underground Crown Holders'</h3></a></li>  
+    <!-- <li><a href="mp3/Hellfire.mp3"><h3>CunninLynguists 'Hellfire'</h3></a></li>    -->
+    <li><a href="mp3/Jezebel.mp3"><h3>Recoil 'Jezebel'</h3></a></li>   
+    <li><a href="mp3/Adore.mp3"><h3>I:Cube 'Adore'</h3></a></li>   
+    <li><a href="mp3/A Day At The Races.mp3"><h3>Jurassic 5 'A Day At The Races'</h3></a></li>   
+    <li><a href="mp3/Since I Left You.mp3"><h3>The Avalanches 'Since I Left You'</h3></a></li>   
+    <!-- <li><a href="mp3/No Ordinary Morning.mp3"><h3>Chicane 'No Ordinary Morning'</h3></a></li>    -->
+    <li><a href="mp3/Cat Breaks.mp3"><h3>Catfive 'Cat Breaks'</h3></a></li>   
+    <li><a href="mp3/Searching For The Space Monkey.mp3"><h3>Chinese Man 'Searching For The Space Monkey'</h3></a></li>   
+    <li><a href="mp3/Shaolin Buddha Finger.mp3"><h3>Depth Charge 'Shaolin Buddha Finger'</h3></a></li>    
+    <li><a href="mp3/Kemuri.mp3"><h3>DJ Krush 'Kemuri'</h3></a></li>        
+    <li><a href="mp3/Private Road.mp3"><h3>Bent 'Private Road'</h3></a></li>   
+    <li><a href="mp3/Sunday Séance.mp3"><h3>Blockhead 'Sunday Séance'</h3></a></li>         
+    <li><a href="mp3/Salvation Barmy.mp3"><h3>MC Paul Barman 'Salvation Barmy'</h3></a></li>     
+    <li><a href="mp3/Sci-Fi Wasabi.mp3"><h3>Cibo Matto 'Sci-Fi Wasabi'</h3></a></li>     
+    <li><a href="mp3/Digital Love.mp3"><h3>Daft Punk 'Digital Love'</h3></a></li> 
+    <li><a href="mp3/The Key.mp3"><h3>Speech Debelle 'The Key'</h3></a></li> 
+    </ul>
+    <br>
+    <p class="copywrite">All © copyright to the Owner/Artist and Distributor</p>
+    <script src="https://code.jquery.com/jquery-2.2.0.js">
+    </script>
+    <script>
+      audioPlayer();
+      function audioPlayer(){
+        var currentSong = 0;
+        $("#audioPlayer")[0].src = $("#playlist li a")
+        [0];
+        $("#audioPlayer")[0].play();
+        $("#playlist li a").click(function(e){
+          e.preventDefault();
+          $("#audioPlayer")[0].src= this;
+          $("#audioPlayer")[0].play();
+          $("#playlist li").removeClass("current-Song");
+          currentSong = $(this).parent().index();
+          $(this).parent().addClass("current-song");
+        });
+        $("#audioPlayer")[0].addEventListener("ended", function(){
+          currentSong++;
+          if(currentSong == $("#playlist li a").length)
+          currentSong = 0;
+          $("#playlist li").removeClass("current-song");
+          $("#playlist li:eq("+currentSong+")").addClass("current-song");
+        });
+      }
+    </script>
+    </div>
+    </div>
+    </div>
+      </section>
+    <!-- AudioPlayer end -->
+    <!--Contact start-->
+    <section id="contact" class="contact">
+    <div class="main-contact">
+    <div class="contact-content">
+    <h4 class="animatedGradient">Hadassah Mashugadah</h4>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#music">Music</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </div>
+    <div class="contact-content">
+    <h4 class="animatedGradient">Other Sites</h4>
+        <li><a href="#">Red Kite</a></li>
+        <li><a href="#">Joelzebub</a></li>
+        <li><a href="#">Saul Rose</a></li>
+        <li><a href="#">Milvus²</a></li>
+    </div>
+        <div class="contact-content">
+            <h4 class="animatedGradient">Follow Us</h4>
+            <div class="social-media">
+                <li><a href="#"><img src="img/facebook-icon.png" title="Facebook"></li></a></div>
+            <div class="social-media">
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="img/youtube-icon.png" title="YouTube"></li></a></div>
+            <div class="social-media">
+                <li><a href="https://www.artstation.com/joelrose" target="_blank"><img src="img/artstation-icon.png" title="Artstation"></li></a></div>  
+            <div class="social-media">
+                <li><a href="https://www.deviantart.com/jspencerose/gallery" target="_blank"><img src="img/deviantart-icon.png" title="Deviantart"></li></a></div>           
+        </div>         
+      </div>
+    </section>
+    <!--Contact End-->
+    <div class="Last-text one">
+    <p>&copy; 2023/2025 designed by Joel Rose</p>
+    </div>
+    <!---Scroll top--->
+    <a href="#home" class="scroll-top">
+    <img src="img/totop.png">
+    </a>
+    <!-- links to JS -->
+    <script>
+    $(document).ready(function() {
+        try {
+            $('body').ripples({
+                resolution: 1000,
+                dropRadius: 20, //px
+                perturbance: 0.01,
+            });
+            $('main').ripples({
+                resolution: 1000,
+                dropRadius: 20, //px
+                perturbance: 0.01,
+                interactive: false
+            });
+        }
+        catch (e) {
+            $('.error').show().text(e);
+        }
+    
+        $('.js-ripples-disable').on('click', function() {
+            $('body, main').ripples('destroy');
+            $(this).hide();
+        });
+    
+        $('.js-ripples-play').on('click', function() {
+            $('body, main').ripples('play');
+        });
+    
+        $('.js-ripples-pause').on('click', function() {
+            $('body, main').ripples('pause');
+        }); 
+    
+         // Automatic drops -->
+         setInterval(function() {
+            var $el = $('main');
+            var x = Math.random() * $el.outerWidth();
+            var y = Math.random() * $el.outerHeight();
+            var dropRadius = 20;
+            var strength = 0.05 + Math.random() * 0.05;
+    
+            $el.ripples('drop', x, y, dropRadius, strength);
+        }, 400);
+    }); 
+    </script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/scrollReveal.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+    <script src="js/ripples.js"></script>
+    <!-- <script src="js/script-2.js" type="text/javascript"></script> -->
+    <script src="js/My-script.js" type="text/javascript"></script>
+    </body>
+    </html>
+
+</body>
+
+<!-- links to JS -->
+<script>
+    $(document).ready(function() {
+        try {
+            $('body').ripples({
+                resolution: 1000,
+                dropRadius: 20, //px
+                perturbance: 0.01,
+            });
+            $('main').ripples({
+                resolution: 1000,
+                dropRadius: 20, //px
+                perturbance: 0.01,
+                interactive: false
+            });
+        }
+        catch (e) {
+            $('.error').show().text(e);
+        }
+    
+        $('.js-ripples-disable').on('click', function() {
+            $('body, main').ripples('destroy');
+            $(this).hide();
+        });
+    
+        $('.js-ripples-play').on('click', function() {
+            $('body, main').ripples('play');
+        });
+    
+        $('.js-ripples-pause').on('click', function() {
+            $('body, main').ripples('pause');
+        }); 
+    
+         // Automatic drops -->
+         setInterval(function() {
+            var $el = $('main');
+            var x = Math.random() * $el.outerWidth();
+            var y = Math.random() * $el.outerHeight();
+            var dropRadius = 20;
+            var strength = 0.05 + Math.random() * 0.05;
+    
+            $el.ripples('drop', x, y, dropRadius, strength);
+        }, 400);
+    }); 
+    </script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/scrollReveal.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+    <script src="js/ripples.js"></script>
+    <!-- <script src="js/script-2.js" type="text/javascript"></script> -->
+    <!-- <script src="js/My-script.js" type="text/javascript"></script> -->
+</html>
