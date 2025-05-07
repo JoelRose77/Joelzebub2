@@ -463,15 +463,16 @@ transition: width 0.3s ease;
 .h-btn:hover {
   padding: 5px 20px;
   margin: 10px;
-  transform: translateX(0) scaleY(1.1);
+  transform: translateX(0) scaleY(1.2);
   transition: all .60s;
-  color: #0ff0ff; 
+  color: #990033; 
   background: var(--color-senary);
+  -webkit-text-stroke: .3px rgb(77, 0, 0);
   -webkit-transition: all .60s ease-in-out;
   -moz-transition: all .60s ease-in-out;
   -o-transition: all .60s ease-in-out;
   transition: all .60s ease-in-out;
-  border-bottom: 3px solid #0ff0ff;
+  border-bottom: 3px solid #990033;
   filter: drop-shadow(1px 2px 3px #dd58d6);
   background: linear-gradient(45deg, #ff2d75, #ff7d00, #ffd300, #00e756, #00b4ff, #8a2be2 100%);
   /* background: linear-gradient(-45deg, rgba(255,145,0,1) 0%, rgba(207,69,69,1) 50%, rgba(120,53,117,1) 100%);     */
